@@ -11,31 +11,30 @@ class Splash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /// Scafflod used for edit the body of the app
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.fill,
               image: NetworkImage(
-                  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fbackground&psig=AOvVaw2YuDgbZnc9l4gL_H3emG43&ust=1666628823989000&source=images&cd=vfe&ved=2ahUKEwiisr2p4vb6AhVgUWwGHSeuDtsQjRx6BAgAEAw"))
+                  "https://png.pngtree.com/thumb_back/fh260/back_pic/03/54/06/62579986dba62df.jpg"
+              ))
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Image(
-              image: AssetImage("assets/images/fluttericon.png"),
-              height: 100,
-              width: 100,
-            ),
-            //Image.asset('assets/images/fluttericon.png'),
-            Text(
-              'Flutter',
-              style: TextStyle(
-                color: Colors.red,
-                fontSize: 30,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                "assets/images/fluttericon.png",
+                height: 100,
+                width: 100,
               ),
-            )
-          ],
+              const Text("Welcome to Flutter",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red)),
+            ],
+          ),
         ),
       ),
     );
