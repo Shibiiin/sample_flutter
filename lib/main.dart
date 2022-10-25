@@ -5,6 +5,7 @@ import 'package:sample_flutter/home.dart';
 
 void main() {
   runApp(MaterialApp(
+    theme: ThemeData(primarySwatch: Colors.green                                                                 ),
     debugShowCheckedModeBanner: false,
     home: Splash(),
   ));
@@ -19,6 +20,7 @@ class _SplashState extends State<Splash> {
   @override
   void initState() {
     super.initState();
+
     Timer(const Duration(seconds: 20), () {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage()));
     });

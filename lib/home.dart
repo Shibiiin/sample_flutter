@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sample_flutter/signup.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -29,12 +30,12 @@ class HomePage extends StatelessWidget {
                 ),
               ),
 
-              /// Textbox
+              /// Username Textbox
               const Padding(
                 padding: EdgeInsets.all(25.0),
                 child: TextField(
                   decoration: InputDecoration(
-                      suffix: Icon(Icons.account_circle_outlined, size: 15),
+                      prefix: Icon(Icons.account_circle_outlined, size: 15),
                       label: Text("Username"),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(15)),
@@ -42,7 +43,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
 
-              ///Textbox
+              /// Password Textbox
               const SizedBox(
                 child: Padding(
                   padding: EdgeInsets.all(15.0),
@@ -50,7 +51,7 @@ class HomePage extends StatelessWidget {
                     obscuringCharacter: "*",
                     obscureText: true,
                     decoration: InputDecoration(
-                        suffix: Icon(
+                        prefix: Icon(
                           Icons.account_circle,
                           size: 15,
                         ),
@@ -65,12 +66,13 @@ class HomePage extends StatelessWidget {
               ///Login button
               Padding(
                 padding: const EdgeInsets.all(20.30),
-                child: ElevatedButton(onPressed: () {}, child: Text("login")),
+                child: ElevatedButton(onPressed: () { }, child: Text("Login")),
               ),
 
               /// last user
               TextButton(
-                  onPressed: () {}, child: Text("Not a User?,Register Here"))
+                  onPressed: () { Navigator.push(context, MaterialPageRoute(builder:  (context)=> Signup()));
+                  }, child: Text("Not a User?,Register Here"))
             ],
           ),
         ));
