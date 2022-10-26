@@ -6,7 +6,7 @@ import 'package:sample_flutter/home.dart';
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(primarySwatch: Colors.green,
-    fontFamily: 'Raleway'),
+    ),
     debugShowCheckedModeBanner: false,
     home: Splash(),
   ));
