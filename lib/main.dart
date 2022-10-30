@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:sample_flutter/home.dart';
+import 'package:sample_flutter/registration.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -22,8 +22,8 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
 
-    Timer(const Duration(seconds: 20), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomePage()));
+    Timer(const Duration(seconds: 3), () {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> RegPage()));
     });
   }
   @override
