@@ -23,8 +23,10 @@ class GridExte extends StatelessWidget{
           color: Colors.red,
         ),
         Container(
-          color: Colors.blue,
-        ),Container(
+          child: const Icon(Icons.account_circle_outlined,color: Colors.red, size: 50,),
+        ),
+
+        Container(
           color: Colors.blue,
         ),Container(
           color: Colors.blue,
