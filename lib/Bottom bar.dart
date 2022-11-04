@@ -12,16 +12,37 @@ class BottomBar extends StatefulWidget {
   State<StatefulWidget> createState() => _BottomBarState();
 }
 
-class _BottomBarState extends State <BottomBar> {
-
+class _BottomBarState extends State<BottomBar> {
   int selectindex = 0;
 
   List bodys = const <Widget>[
-    Card(child: Padding(padding: EdgeInsets.all(25), child: Text('Home'),),),
-    Card(child: Padding(padding: EdgeInsets.all(25), child: Text('Search'),),),
     Card(
-      child: Padding(padding: EdgeInsets.all(25), child: Text('Activity'),),),
-    Card(child: Padding(padding: EdgeInsets.all(25), child: Text('Account',style: TextStyle(fontSize: 50),),),),
+      child: Padding(
+        padding: EdgeInsets.all(25),
+        child: Text('Home'),
+      ),
+    ),
+    Card(
+      child: Padding(
+        padding: EdgeInsets.all(25),
+        child: Text('Search'),
+      ),
+    ),
+    Card(
+      child: Padding(
+        padding: EdgeInsets.all(25),
+        child: Text('Activity'),
+      ),
+    ),
+    Card(
+      child: Padding(
+        padding: EdgeInsets.all(25),
+        child: Text(
+          'Account',
+          style: TextStyle(fontSize: 50),
+        ),
+      ),
+    ),
   ];
 
   void onitemtapped(int index) {
@@ -34,7 +55,7 @@ class _BottomBarState extends State <BottomBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title:const Text('Bottom Bar'),
+        title: const Text('Bottom Bar'),
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,

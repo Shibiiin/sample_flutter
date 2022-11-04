@@ -10,7 +10,7 @@ class StackView extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Stack'),),
+    //  appBar: AppBar(title: Text('Stack'),),
 
       body: Stack(
 children: [
