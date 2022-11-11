@@ -34,6 +34,7 @@ dependencies:
   fluttertoast: ^8.1.1
   staggered_grid_view_flutter: ^0.0.4
   quickalert: ^1.0.0
+  carousel_slider: ^4.1.1
 
 
   # The following adds the Cupertino Icons font to your application.
