@@ -27,4 +27,11 @@ const List<Map<String, dynamic>> dummyProducts = [
     "description": "this is the description four",
     "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToeISNATVJ2FHKg3ElkurdbcuDm2c70xhf55wNdCpZHYi9ql5l7ISlbUdKNKl3O1tHPCk&usqp=CAU",
   },
+  {
+    'id': 5,
+    "name": "Product 5 ",
+    "price": 300,
+    "description": "this is the description four",
+    "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToeISNATVJ2FHKg3ElkurdbcuDm2c70xhf55wNdCpZHYi9ql5l7ISlbUdKNKl3O1tHPCk&usqp=CAU",
+  },
 ];

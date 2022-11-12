@@ -30,7 +30,9 @@ class _homepageState extends State<homepage> {
         centerTitle: true,
       ),
       drawer: Theme(
-        data: Theme.of(context).copyWith(),
+        data: Theme.of(context).copyWith(
+          canvasColor: Colors.grey
+        ),
         child: Drawer(
           child: ListView(
             children: <Widget>[
@@ -113,8 +115,8 @@ class _homepageState extends State<homepage> {
                       context: context,
                       builder: (context) {
                         return AlertDialog(
-                          title: Text('Alert Dialog'),
-                          content: Text('Do ypu want to close?'),
+                          title: const Text('Alert Dialog'),
+                          content: const Text('Do ypu want to close?'),
                           actions: [
                             TextButton(
                               onPressed: () {
@@ -126,7 +128,10 @@ class _homepageState extends State<homepage> {
                               },
                               child: Text('Yes'),
                             ),
-                            TextButton(onPressed: () {}, child: Text('No')),
+                            TextButton(onPressed: () {
+                              Navigator.pop(context);
+                            },
+                                child: Text('No')),
                           ],
                         );
                       });
@@ -136,7 +141,7 @@ class _homepageState extends State<homepage> {
           ),
         ),
       ),
-      body: Center(
+      body: const Center(
         child: (Text(
           'HOME PAGE',
           style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
