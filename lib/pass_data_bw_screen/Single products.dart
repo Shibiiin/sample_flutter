@@ -15,17 +15,20 @@ class SingleProductScreen extends StatelessWidget{
    ),
    body: Padding(
       padding:const EdgeInsets.all(20),
-child: Column(
+child: ListView(
   children: [
-    Text('Name: ${Product['name']}',
-    style:const TextStyle(fontSize: 50, color: Colors.red),),
-    Text('Price ${Product['price'].toString()}',style: const TextStyle(fontSize: 30),),
-Text('Description ${Product['description']}'),
-   Image(image: NetworkImage('${Product['image']}'),
-   height: 170,
-   width: double.infinity,
+    Image(image: NetworkImage('${Product['image']}'),
+      height: 170,
+      width: double.infinity,
+    ),
+    Text('${Product['name']}',
+    style:const TextStyle(fontSize: 50, color: Colors.red),textAlign: TextAlign.center,),
+    const Padding(padding: EdgeInsets.all(30)),
+    Text('Price ${Product['price'].toString()}',style:TextStyle(fontSize: 40, backgroundColor: Colors.yellow),textAlign: TextAlign.center,),
+    const Padding(padding: EdgeInsets.all(30)),
+Text('Description ${Product['description']}',style: TextStyle(fontSize: 30, background:  Paint()..color = Colors.blue),textAlign: TextAlign.center,),
+    const Padding(padding: EdgeInsets.all(30)),
 
-   ),
   ],
 ),
    ),

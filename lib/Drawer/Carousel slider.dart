@@ -23,8 +23,26 @@ class _SliderrState extends State<Sliderr> {
         title: Text('Carousel SLider'),
         centerTitle: true,
       ),
-      body:CarouselSlider(
-        items: [
+      body:ListView(
+        children: [
+          CarouselSlider(
+              items: [
+                Container(
+                  margin: const EdgeInsets.all(5.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    image: const DecorationImage(
+                      image: NetworkImage('https://storage.googleapis.com/cms-storage-bucket/70760bf1e88b184bb1bc.png'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+              ],
+
+              options: CarouselOptions(
+                height: 20,
+                enlargeCenterPage:
+              ))
         
       ],
 
