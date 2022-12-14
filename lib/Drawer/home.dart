@@ -17,7 +17,7 @@ class homepage extends StatefulWidget {
 }
 
 class _homepageState extends State<homepage> {
-  String mainPrafilePic =
+  String mainProfilePic =
       'https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.jpg?b=1&s=170667a&w=0&k=20&c=MRMqc79PuLmQfxJ99fTfGqHL07EDHqHLWg0Tb4rPXQc=';
   String otherProfilePic =
       "https://assets-global.website-files.com/5ec7dad2e6f6295a9e2a23dd/6222481c0ad8761618b18e7e_profile-picture.jpg";

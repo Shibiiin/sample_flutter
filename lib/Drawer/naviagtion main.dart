@@ -12,7 +12,7 @@ class NavigDrawer extends StatelessWidget{
   Widget build(BuildContext context) {
    return const Scaffold(
      body: Center(
-       child: Text('Welcom'),
+       child: Text('Welcome'),
      ),
    );
   }

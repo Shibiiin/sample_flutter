@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main(){
   runApp(MaterialApp(
@@ -56,9 +57,24 @@ appBar: AppBar(
   title: Text('Bottom Sheet'),
 centerTitle: true,
 ),
-     body: Container(),
+     body: Container(
+       child:
+           Padding(padding: EdgeInsets.all(50),
+           child:
+    Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children:const [
+           Icon(FontAwesomeIcons.instagram,size: 50,),
+           SizedBox(height: 10,),
+           Icon(FontAwesomeIcons.instagram,size: 50,),
+           SizedBox(height: 10,),
+           Icon(FontAwesomeIcons.instagram,size: 50,),
+         ],
+    )
+       ),
+     ),
      floatingActionButton: FloatingActionButton(
-       child: Icon(Icons.add),
+       child: Icon(Icons.home),
        onPressed: () => _show(context),
      ),
 

@@ -23,7 +23,6 @@ return MaterialApp(
        child:  Lottie.asset('assets/anima/hi.json',height: 200, width: 100),
   ),
          Center(
-
          child: Lottie.network('https://assets5.lottiefiles.com/packages/lf20_hqfbl3nn.json', height: 100, width: 100),
     ),
     ],
