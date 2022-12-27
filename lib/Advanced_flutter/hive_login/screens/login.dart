@@ -35,9 +35,9 @@ class LoginScreen extends StatelessWidget {
                         width: 350,
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
-                            color: Colors.transparent.withOpacity(0.3),
+                            color: Colors.grey[400],
                             border: Border.all(
-                                color: Colors.transparent.withOpacity(.1),
+                                color: Colors.black,
                                 width: 2),
                             borderRadius: BorderRadius.circular(10)),
                         child: Column(
@@ -46,15 +46,18 @@ class LoginScreen extends StatelessWidget {
                             TextField(
                               controller: _emailController,
                               style: const TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
+                                color: Colors.black,
+                                fontSize: 20,
                               ),
-                              decoration: InputDecoration(
+                              decoration:  InputDecoration(
                                 hintText: 'Email',
-                                hintStyle: TextStyle(
-                                    color: Colors.grey[400], fontSize: 16),
-                                enabledBorder: InputBorder.none,
-                                disabledBorder: InputBorder.none,
+                                hintStyle: const TextStyle(
+                                    color: Colors.black, fontSize: 16),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                ),
+                                filled: true,
+                                fillColor: Colors.white
                               ),
                             ),
                             const SizedBox(height: 20),
@@ -63,15 +66,18 @@ class LoginScreen extends StatelessWidget {
                               obscuringCharacter: '*',
                               controller: _passwordController,
                               style: const TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 18,
                               ),
-                              decoration: InputDecoration(
+                              decoration:  InputDecoration(
                                 hintText: 'Password',
-                                hintStyle: TextStyle(
-                                    color: Colors.grey[400], fontSize: 16),
-                                enabledBorder: InputBorder.none,
-                                disabledBorder: InputBorder.none,
+                                hintStyle: const TextStyle(
+                                    color: Colors.black, fontSize: 16),
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                ),
+                                fillColor: Colors.white,
+                                filled: true,
                               ),
                             ),
                             const SizedBox(height: 50),
@@ -109,12 +115,12 @@ class LoginScreen extends StatelessWidget {
                                   children: const [
                                     Text(
                                       'Dont have an account? ',
-                                      style: TextStyle(color: Colors.grey),
+                                      style: TextStyle(color: Colors.black),
                                     ),
                                     Text(
                                       'Signup',
                                       style: TextStyle(
-                                          color: Colors.white,
+                                          color: Colors.blue,
                                           fontWeight: FontWeight.bold),
                                     )
                                   ],

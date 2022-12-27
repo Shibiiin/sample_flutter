@@ -46,15 +46,18 @@ class SignupScreen extends StatelessWidget {
                               keyboardType: TextInputType.emailAddress,
                               controller: _emailController,
                               style: const TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 18,
                               ),
                               decoration: InputDecoration(
                                 hintText: 'Email',
                                 hintStyle: TextStyle(
                                     color: Colors.grey[400], fontSize: 16),
-                                enabledBorder: InputBorder.none,
-                                disabledBorder: InputBorder.none,
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                fillColor: Colors.white,
+                                filled: true,
                               ),
                             ),
                             const SizedBox(height: 20),
@@ -63,15 +66,18 @@ class SignupScreen extends StatelessWidget {
                               obscuringCharacter: '*',
                               controller: _passwordController,
                               style: const TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 18,
                               ),
                               decoration: InputDecoration(
                                 hintText: 'Password',
                                 hintStyle: TextStyle(
                                     color: Colors.grey[400], fontSize: 16),
-                                enabledBorder: InputBorder.none,
-                                disabledBorder: InputBorder.none,
+                                enabledBorder:  OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                fillColor: Colors.white,
+                                filled: true,
                               ),
                             ),
                             const SizedBox(height: 20),
@@ -80,15 +86,18 @@ class SignupScreen extends StatelessWidget {
                               obscuringCharacter: '*',
                               controller: _confirmPasswordController,
                               style: const TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 18,
                               ),
                               decoration: InputDecoration(
                                 hintText: 'Confirm password',
                                 hintStyle: TextStyle(
                                     color: Colors.grey[400], fontSize: 16),
-                                enabledBorder: InputBorder.none,
-                                disabledBorder: InputBorder.none,
+                                enabledBorder: OutlineInputBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                fillColor: Colors.white,
+                                filled: true,
                               ),
                             ),
                             const SizedBox(height: 50),
@@ -121,12 +130,12 @@ class SignupScreen extends StatelessWidget {
                                   children: const [
                                     Text(
                                       'Already have an account? ',
-                                      style: TextStyle(color: Colors.grey),
+                                      style: TextStyle(color: Colors.black),
                                     ),
                                     Text(
                                       'Login',
                                       style: TextStyle(
-                                          color: Colors.white,
+                                          color: Colors.blue,
                                           fontWeight: FontWeight.bold),
                                     )
                                   ],

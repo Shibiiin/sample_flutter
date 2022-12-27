@@ -1,6 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sample_flutter/profile%20ui/blog_home.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key, required this.email});
@@ -12,6 +13,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Welcome $email'),
       ),
+      body: const BlogHomeOnePage(),
     );
   }
 }
