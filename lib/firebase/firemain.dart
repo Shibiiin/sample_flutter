@@ -100,7 +100,7 @@ class _FireState extends State<Fire> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Firebase'),
+        title: Text('Firebase Storage'),
         centerTitle: true,
       ),
       body: Padding(
