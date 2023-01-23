@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'package:permission_handler/permission_handler.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -118,9 +121,12 @@ class _MyHomePageState extends State<MyHomePage> {
     Map<Permission, PermissionStatus> statuses = await [
       Permission.location,
       Permission.storage,
+      Permission.bluetooth,
     ].request();
     print("location permission: ${statuses[Permission.location]}, "
-        "storage permission: ${statuses[Permission.storage]}");
+        "storage permission: ${statuses[Permission.storage]},"
+    "Bluetooth Permission: ${statuses[Permission.bluetooth]}",
+    );
   }
 
   /// The user opted to never again see the permission request dialog for this
